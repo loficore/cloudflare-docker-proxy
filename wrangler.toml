@@ -16,15 +16,15 @@ CUSTOM_DOMAIN = "exmaple.com"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.libcuda.so", custom_domain = true },
-#   { pattern = "quay.libcuda.so", custom_domain = true },
-#   { pattern = "gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s.libcuda.so", custom_domain = true },
-#   { pattern = "ghcr.libcuda.so", custom_domain = true },
-#   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.flyforfree.cc", custom_domain = true },
+  { pattern = "quay.flyforfree.cc", custom_domain = true },
+  { pattern = "gcr.flyforfree.cc", custom_domain = true },
+  { pattern = "k8s-gcr.flyforfree.cc", custom_domain = true },
+  { pattern = "k8s.flyforfree.cc", custom_domain = true },
+  { pattern = "ghcr.flyforfree.cc", custom_domain = true },
+  { pattern = "cloudsmith.flyforfree.cc", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
@@ -32,7 +32,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+route = { pattern = "docker-staging.flyforfree.cc", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
